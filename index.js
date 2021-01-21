@@ -5,6 +5,9 @@ const bodyparser = require('body-parser');
 const PORT = process.env.PORT||8000;
 app.use(bodyparser.json());
 
+
+
+//This is to establish a connection
 var mysqlConnection = mysql.createConnection({
       host: 'localhost',
       user:  'root',
